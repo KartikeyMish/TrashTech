@@ -1,0 +1,76 @@
+<<<<<<< Updated upstream
+{% extends "base.html" %} {% block content %}
+
+<div class="jumbotron">
+  <h1 class="display-4">Garbage Classification</h1>
+  <p class="lead">This Deep Learning model was trained on Garbage Classification Dataset.</p>
+  <hr class="my-4">
+  <p>Garbage Classification Dataset contains 6 classifications: cardboard , glass , metal , paper, plastic and trash.</p>
+
+  <form id="upload-file" method="post" enctype="multipart/form-data" class="my-5">
+    <div class="form-group">
+      <label for="imageUpload">Choose Images...</label>
+      <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg" class="form-control-file">
+    </div>
+    <button type="button" class="btn btn-primary btn-lg" id="btn-predict">Predict!</button>
+  </form>
+
+  <div class="image-section" style="display:none;">
+    <div class="img-preview">
+      <div id="imagePreview"></div>
+    </div>
+  </div>
+
+  <div class="loader" style="display:none;"></div>
+
+  <h3 id="result" class="mt-5">
+    <span> </span>
+  </h3>
+</div>
+
+{% endblock %}
+=======
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Waste Detector</title>
+    <link rel="stylesheet" type="text/css" href="templates\styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">Waste Detector</div>
+                <ul class="navbar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Waste Detector</h1>
+        <form method="POST"  enctype="multipart/form-data"  >
+            <label for="image">Select image:</label>
+            <!-- -->
+            <input type="file" id="image" name="image">
+            <br><br>
+            <input class="button" type="submit">
+          </form>
+        {% if score %}  
+        <div class="result">
+            <p>Waste Type : {{ output }} , Accuracy : {{ score }}%</p>
+        </div>
+        {% else %}
+        <div class="result">
+            <p>No result found.</p>
+        </div>
+        {% endif %}
+    </div>
+
+</body>
+</html>
+>>>>>>> Stashed changes
