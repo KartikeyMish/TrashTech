@@ -4,3 +4,6 @@ keras==2.4.3
 numpy==1.20.2
 tensorflow==2.4.1
 Werkzeug==1.0.1
+numpy 
+keras.applications
+gevent

@@ -10,6 +10,8 @@ from tensorflow.keras.preprocessing import image
 from flask import Flask, url_for, redirect, request, render_template
 from werkzeug.utils import secure_filename
 from gevent.pywsgi import WSGIServer
+from PIL import Image
+
 
 import os
 

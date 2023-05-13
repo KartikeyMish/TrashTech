@@ -12,16 +12,43 @@
     <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar navbar-dark bg-dark">
+    
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
       <div class="container">
-        <a class="navbar-brand" href="#">Epics Project waste Classification</a>
-        <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">
-          Help
+        <a class="navbar-brand" href="#">Web Zone</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#Classifier">Classifier</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#Solution">DIY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
-    <div class="container">
+    <div>
       {% with messages = get_flashed_messages(with_categories=true) %}
         {% if messages %}
           {% for category, message in messages %}
@@ -32,7 +59,7 @@
         {% endif %}
       {% endwith %}
 
-      <div id="content" style="margin-top:2em">{% block content %}{% endblock %}</div>
+      <div id="content" >{% block content %}{% endblock %}</div>
     </div>
 
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>

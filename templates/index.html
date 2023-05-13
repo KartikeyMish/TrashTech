@@ -1,6 +1,16 @@
 
 {% extends "base.html" %} {% block content %}
 
+<section id= "Home">
+<div class="hero-image">
+  <div class="hero-container">
+  <h1> Lorem Ipsum</h1> 
+  <h2> Lorem Ipsum</h2>
+  </div>
+</div>
+</section>
+
+<section id= "Classifier">
 <div class="jumbotron">
   <h1 class="display-4">Garbage Classification</h1>
   <p class="lead">This Deep Learning model was trained on Garbage Classification Dataset.</p>
@@ -27,6 +37,45 @@
     <span> </span>
   </h3>
 </div>
+</section>
+
+<section id ="Solution">
+<div id="videoCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#videoCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#videoCarousel" data-slide-to="1"></li>
+      <li data-target="#videoCarousel" data-slide-to="2"></li>
+      <!-- Add more indicators as needed -->
+    </ol>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <iframe width="1140" height="850" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      <div class="carousel-item">
+        <iframe width="1140" height="850" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      <div class="carousel-item">
+        <iframe width="1140" height="850" src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      <!-- Add more carousel items with embedded YouTube videos -->
+    </div>
+
+    <!-- Controls -->
+    <a class="carousel-control-prev" href="#videoCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#videoCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</section>
+
+
 
 {% endblock %}
 =======

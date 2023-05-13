@@ -44,7 +44,55 @@ input[type="file"] {
     animation: spin 1s linear infinite;
 }
 
+#hero {
+    width: 100%;
+}
+
+.hero-image {
+    background: url("/static/images/garbage.jpg") top center;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    color: #fff;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 600px;
+  }
+
+/* Navbar css */
+.navbar {
+    height: 80px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    z-index: 100;
+    transition: background-color 1s ease 0s;
+  }
+.navbar::hover {
+    background-color: #0d8617;
+    border: none;
+}
+  .navbar .navbar-nav {
+    margin-left: auto;
+  }
+
+  .navbar .nav-item {
+    margin-right: 10px;
+  }
+
+  .navbar .nav-link {
+    color: #0d8617;
+  }
+
+/* ending navbar */
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+
 }
+
