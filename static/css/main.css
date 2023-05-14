@@ -48,10 +48,16 @@ input[type="file"] {
     width: 100%;
 }
 
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+
 .hero-image {
     background: url("/static/images/garbage.jpg") top center;
     background-size: cover;
-    height: 70vh;
+    height: 80vh;
     width: 100%;
     display: flex;
     align-items: center; 
@@ -63,13 +69,31 @@ input[type="file"] {
   .hero-content {
     max-width: 600px;
   }
+  .hero-containter{
+    /* align-items:start; */
+  }
 
+  h1{
+    font-family: 'Sora';
+    color: #75480e;
+    font-size: 80px;
+    text-align: left;
+
+  }
+  h2{
+    color: #d9891a;
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Merriweather', serif;
+    font-family: 'Sora', sans-serif;
+    font-family: 'Unbounded', cursive;
+  }
 /* Navbar css */
 .navbar {
     height: 80px;
     background-color: transparent;
     border: none;
-    color: white;
+    color: #1ad55b;
     z-index: 100;
     transition: background-color 1s ease 0s;
   }
@@ -88,8 +112,24 @@ input[type="file"] {
   .navbar .nav-link {
     color: #0d8617;
   }
-
+  .carousel-item.active {
+    align-items: center;
+  }
+  .video {
+    align-items: center;
+  } 
+  .carousel-inner {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
 /* ending navbar */
+
+#videoCarousel {
+  width: 60% ;
+  margin: auto;
+  
+}
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }

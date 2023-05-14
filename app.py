@@ -15,8 +15,6 @@ from PIL import Image
 
 import os
 
-
-
 # Define a flask app
 app = Flask(__name__)
 
