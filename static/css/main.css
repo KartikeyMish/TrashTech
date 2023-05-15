@@ -184,7 +184,10 @@ input[type="file"] {
     border: none;
     color: #cbb003;
     z-index: 70;
-    transition: background-color 1s ease 1s;
+    transition: background-color 1s ease 0s;
+  }
+  .navbar_scrolled{
+    background-color: #644105;
   }
 .navbar::hover {
     background-color: #75480e;
@@ -269,6 +272,24 @@ hr {
       border-color: lighten(#555, 20%);
     }
 }
+
+/* input frop box */
+#wrapper {
+  width:500px;
+  margin:0 auto;
+  margin-top:40px;
+}
+#fileDropBox {
+  margin-left:100px;
+  width: 20em;
+  line-height: 10em;
+  border: 1px dashed gray;
+  text-align: center;
+  color: gray;
+  border-radius: 7px;
+}
+/* end drop box */
+
 
 /* input file style */
 
@@ -404,6 +425,7 @@ a {
 }
 #classifier{
   display: flex;
+  padding-top: 10%;
 }
 /* sectior-soltion */
 #Solution{
@@ -461,11 +483,11 @@ a {
   #home-2{
     height: 47vh;
   }
-  button.btn{
-    background-color: #644105;
-    margin-top: 3%;
-    align-self: center;
-  }
-
+}
+#btn-predict{
+  background-color: #644105;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  align-self: center;
 }
 

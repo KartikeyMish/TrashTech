@@ -23,6 +23,18 @@ $(document).ready(function () {
         $('#result').hide();
         readURL(this);
     });
+    // navbar scroll fading animation
+    const navE1 = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+      if(window.scrollY >= 500) {
+        navE1.classList.add('navbar_scrolled');
+      }
+      else {
+        if(window.scrollY < 500) {
+          navE1.classList.remove('navbar_scrolled'); 
+        }
+      }
+    });
 
     // Predict
     $('#btn-predict').click(function () {
@@ -50,7 +62,7 @@ $(document).ready(function () {
             },
         });
     });
-
+    
     // Transition effect for navbar 
     $(window).scroll(function() {
         // checks if window is scrolled more than 500px, adds/removes solid class
@@ -77,5 +89,10 @@ $(document).ready(function () {
         });
       
       })();
+      $('.file-upload').file_upload();
+      $(document).ready(function () {
+        $('#dtBasicExample').DataTable();
+        $('.dataTables_length').addClass('bs-select');
+      });
 
 });
