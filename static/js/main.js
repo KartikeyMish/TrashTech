@@ -1,4 +1,12 @@
 $(document).ready(function () {
+      $('.hero-image').attr({
+        "data-aos": "fade left",
+        "data-aos-duration": "2000"
+    });
+    setTimeout(() => {
+        AOS.init();
+    }, 120);
+
     // Init
     $('.image-section').hide();
     $('.loader').hide();
@@ -22,7 +30,24 @@ $(document).ready(function () {
         $('#result').text('');
         $('#result').hide();
         readURL(this);
+
     });
+    // aos animation
+    $(document).ready(function () {
+      
+   });
+  
+   //refresh animations
+   $(window).on('load', function() {
+      AOS.refresh();
+   });
+    // paralaxx effect
+    window.addEventListener("scroll", function() {
+        var parallaxSection = document.getElementById("home");
+        var yPos = window.pageYOffset;
+        parallaxSection.style.backgroundPositionY = -yPos * 0.5 + "px";
+      });
+      
     // navbar scroll fading animation
     const navE1 = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
@@ -57,7 +82,7 @@ $(document).ready(function () {
                 // Get and display the result
                 $('.loader').hide();
                 $('#result').fadeIn(600);
-                $('#result').text(' Result:  ' + data);
+                $('#result').text(' Category of Waste :  ' + data);
                 console.log('Success!');
             },
         });
