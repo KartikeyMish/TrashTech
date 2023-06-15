@@ -1,10 +1,7 @@
 Flask==2.2.2
 gevent==22.10.2
-keras==2.12.0
-numpy==1.23.5
-numpy==1.24.1
+keras==2.12.01
 numpy==1.24.3
-Pillow==9.5.0
 Pillow==9.5.0
 tensorflow==2.12.0
 tensorflow_intel==2.12.0
