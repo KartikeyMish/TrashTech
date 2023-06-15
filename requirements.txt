@@ -7,3 +7,4 @@ Werkzeug
 numpy 
 keras.applications
 gevent
+tensorrt
