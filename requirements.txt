@@ -8,3 +8,4 @@ numpy
 keras.applications
 gevent
 tensorrt
+wheel
