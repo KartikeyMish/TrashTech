@@ -45,6 +45,8 @@ To run the TrashTech project, you need to have the following dependencies instal
 - Keras 2.6.0
 - NumPy 1.21.2
 - Pillow 8.4.0
+- Gevent 22.10.2
+- Werkzeug 2.2.2
 
 You can install these dependencies by running the following command:
 
