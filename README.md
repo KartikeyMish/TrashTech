@@ -3,6 +3,8 @@
 ## Introduction 📝
 TrashTech is a Flask-based project that aims to classify different categories of waste using deep learning techniques. The project has been trained on a dataset containing more than 5000 images of waste items. It not only classifies the waste into seven different categories but also provides sections to craft waste items and promote their reuse. The ultimate goal of TrashTech is to motivate people to recycle waste and raise awareness about the importance of recycling for the well-being of our planet. 🌱🌎
 
+![home](static/images/1.png)
+
 ## Waste Classification ♻️🗑️
 TrashTech utilizes deep learning algorithms to accurately classify waste items into the following seven categories:
 1. Plastic 🥤
@@ -15,8 +17,11 @@ TrashTech utilizes deep learning algorithms to accurately classify waste items i
 
 The trained model is capable of analyzing images of waste items and predicting their corresponding category with high accuracy.
 
+![home](static/images/2.png)
+
 ## Craft and Reuse ♻️🎨
 TrashTech goes beyond waste classification by providing sections that offer creative ideas and instructions for crafting waste items into useful and aesthetically pleasing objects. These ideas encourage users to reuse waste materials and reduce their environmental impact. By transforming waste into valuable items, TrashTech aims to inspire users to think innovatively and contribute to a more sustainable future. ♻️🔨🖌️
+![home](static/images/3.png)
 
 ## Motivation for Recycling Waste 🌍💪
 Recycling waste plays a crucial role in preserving our planet's resources and protecting the environment. TrashTech emphasizes the significance of recycling by highlighting the potential consequences if we neglect this responsibility. Earth would suffer from the following consequences without proper waste recycling:
@@ -27,6 +32,8 @@ Recycling waste plays a crucial role in preserving our planet's resources and pr
 
 By raising awareness about these issues, TrashTech encourages individuals to adopt sustainable practices and actively participate in recycling efforts.
 
+![home](static/images/4.png)
+
 ## Feedback and Contact 💬📧
 TrashTech values user feedback and encourages users to report any bugs or suggest improvements to enhance the project's functionality. If you encounter any issues or have ideas for improvement, please feel free to reach out through the provided contact information.
 
@@ -35,6 +42,8 @@ If you come across any bugs or technical issues while using TrashTech, please su
 
 ### Suggesting Changes 📝📮
 We welcome your suggestions for any changes or new features you would like to see in TrashTech. Please reach out to us by email at kartikeymishra626@gmail.com or submit your suggestions on our GitHub repository.
+
+> Also you guys can fill <a href="https://forms.gle/qA6EBHfqH5ksYWFt9">this form</a> for a detailed submission regarding this. Your input is valuable to us and will help us improve TrashTalk further. Thank you for your contribution! 🙏🌱
 
 ## Requirements 📦🔧
 To run the TrashTech project, you need to have the following dependencies installed:
