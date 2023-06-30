@@ -5,3 +5,4 @@ numpy
 Pillow==9.5.0
 tensorflow
 Werkzeug==2.2.2
+gunicorn==19.7.1
