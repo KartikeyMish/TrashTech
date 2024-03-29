@@ -6,7 +6,7 @@ TrashTech is a Flask-based project that aims to classify different categories of
 ![home](static/images/1.png)
 
 ## Waste Classification ♻️🗑️
-TrashTech utilizes deep learning algorithms to accurately classify waste items into the following seven different categories:
+TrashTech utilizes deep learning algorithms to accurately classify waste items into the following seven categories:
 1. Plastic 🥤
 2. Glass 🍶
 3. Metal 🧱
