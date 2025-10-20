@@ -26,6 +26,9 @@ model = load_model(MODEL_PATH)
 
 def model_predict(img_path, model):
     
+"""
+TODO: Document model_predict.
+"""
     img = image.load_img(img_path, target_size=(224, 224))
     img = image.img_to_array(img)
     img = np.expand_dims(img, axis=0)
@@ -38,11 +41,17 @@ def model_predict(img_path, model):
 @app.route('/', methods=['GET'])
 def index():
     # Main page
+"""
+TODO: Document index.
+"""
     return render_template('index.html')
 
 
 @app.route('/predict', methods=['GET', 'POST'])
 def upload():
+"""
+TODO: Document upload.
+"""
     label = {'cardboard': 0, 
             'glass': 1, 
             'metal': 2, 
