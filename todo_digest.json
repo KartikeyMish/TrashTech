@@ -1,0 +1,122 @@
+[
+  {
+    "id": "todo_anno_capsule_manifest",
+    "description": "Create halcyon_tools/anno capsule manifest with start/stop commands, health probes, and capability metadata.",
+    "status": "DONE",
+    "source": "sprint_cards/2025-02-anno-hardening.md",
+    "file": null,
+    "line": null,
+    "hardened": true,
+    "updated_at": "2025-10-20T11:03:26.048317+00:00"
+  },
+  {
+    "id": "todo_anno_ndjson_bridge",
+    "description": "Implement NDJSON-to-dev-graph bridge that stores provenance, checksums, and confidence in Halcyon capsules.",
+    "status": "DONE",
+    "source": "sprint_cards/2025-02-anno-hardening.md",
+    "file": null,
+    "line": null,
+    "hardened": true,
+    "updated_at": "2025-10-20T11:03:26.048615+00:00"
+  },
+  {
+    "id": "todo_anno_cli_activation",
+    "description": "Expose halcyon tools activate|status anno CLI verbs to orchestrate environment checks and registration.",
+    "status": "DONE",
+    "source": "sprint_cards/2025-02-anno-hardening.md",
+    "file": null,
+    "line": null,
+    "hardened": true,
+    "updated_at": "2025-10-20T11:03:26.048853+00:00"
+  },
+  {
+    "id": "todo_anno_c8_coverage",
+    "description": "Introduce c8/coverage pipeline for tools/anno with \u226585% threshold and CI-friendly command.",
+    "status": "DONE",
+    "source": "sprint_cards/2025-02-anno-hardening.md",
+    "file": null,
+    "line": null,
+    "hardened": true,
+    "updated_at": "2025-10-20T11:03:26.049033+00:00"
+  },
+  {
+    "id": "todo_anno_batch_integration_test",
+    "description": "Add integration test covering /v1/content/batch-fetch streaming events and policy enforcement toggles.",
+    "status": "DONE",
+    "source": "sprint_cards/2025-02-anno-hardening.md",
+    "file": null,
+    "line": null,
+    "hardened": true,
+    "updated_at": "2025-10-20T11:03:26.049334+00:00"
+  },
+  {
+    "id": "todo_anno_fdmc_logging",
+    "description": "Pipe critical Anno events through FDMC logging adapter so system_log.md reflects research actions.",
+    "status": "DONE",
+    "source": "sprint_cards/2025-02-anno-hardening.md",
+    "file": null,
+    "line": null,
+    "hardened": true,
+    "updated_at": "2025-10-20T11:03:26.049513+00:00"
+  },
+  {
+    "id": "todo_anno_activation_smoke",
+    "description": "Verify capsule activation via health probe and smoke check.",
+    "status": "DONE",
+    "source": "sprint_cards/2025-02-anno-hardening.md",
+    "file": null,
+    "line": null,
+    "hardened": true,
+    "updated_at": "2025-10-20T11:03:26.049684+00:00"
+  },
+  {
+    "id": "todo_anno_devnote_linkage",
+    "description": "Record hardening decisions and validation evidence in dev_notes.md with links to Validation Summary.",
+    "status": "DONE",
+    "source": "sprint_cards/2025-02-anno-hardening.md",
+    "file": null,
+    "line": null,
+    "hardened": true,
+    "updated_at": "2025-10-20T11:03:26.049855+00:00"
+  },
+  {
+    "id": "todo_anno_capsule_playbook",
+    "description": "Author docs/anno_tool_capsule.md playbook covering activation, auth, telemetry, and teardown.",
+    "status": "DONE",
+    "source": "sprint_cards/2025-02-anno-hardening.md",
+    "file": null,
+    "line": null,
+    "hardened": true,
+    "updated_at": "2025-10-20T11:03:26.050012+00:00"
+  },
+  {
+    "id": "todo_anno_config_schema",
+    "description": "Update .halcyon_config.yaml schema to guard required env vars, ports, and lockable tool binaries.",
+    "status": "DONE",
+    "source": "sprint_cards/2025-02-anno-hardening.md",
+    "file": null,
+    "line": null,
+    "hardened": true,
+    "updated_at": "2025-10-20T11:03:26.050161+00:00"
+  },
+  {
+    "id": "todo_anno_provenance_docstrings",
+    "description": "Ensure new modules expose docstrings/TSDoc and log provenance (agent + model) for task dispatch.",
+    "status": "DONE",
+    "source": "sprint_cards/2025-02-anno-hardening.md",
+    "file": null,
+    "line": null,
+    "hardened": true,
+    "updated_at": "2025-10-20T11:03:26.050345+00:00"
+  },
+  {
+    "id": "todo_anno_digest_alignment",
+    "description": "Automate digest updates once TODOs are injected/executed by agents to maintain FDMC traceability.",
+    "status": "DONE",
+    "source": "sprint_cards/2025-02-anno-hardening.md",
+    "file": null,
+    "line": null,
+    "hardened": true,
+    "updated_at": "2025-10-20T11:03:26.050504+00:00"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "adapter_id": "adapter-TrashTech",
+  "project_id": "TrashTech",
+  "root_path": "/home/evo-nirvana/halcyon-workspace/TrashTech",
+  "session_token": "halcyon-TrashTech-20251020T110325",
+  "policy_version": "0.1-draft",
+  "policy_delta": {},
+  "tasks_supported": [
+    "TODO_INJECT",
+    "RUN_TESTS",
+    "APPLY_PATCH",
+    "COMMIT"
+  ],
+  "heartbeat_interval_sec": 30,
+  "capsule_manifest": [],
+  "attached_at": "2025-10-20T11:03:25.543517+00:00"
+}

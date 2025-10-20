@@ -1,0 +1,149 @@
+generated_at: '2025-10-20T11:03:25.438252+00:00'
+mode: full
+tasks:
+- slug: docs-readme
+  title: Enhance README and API docs
+  category: documentation
+  phase: Document
+  command: IMPROVE_DOCUMENTATION
+  params:
+    scope: readme
+  weight: 3
+  tags:
+  - docs
+  - fdmc:document
+- slug: docs-docstrings
+  title: Add missing docstrings
+  category: documentation
+  phase: Develop
+  command: ADD_DOCSTRINGS
+  params:
+    visibility: public
+  weight: 2
+  tags:
+  - docs
+  - fdmc:develop
+- slug: tests
+  title: Expand unit test coverage
+  category: testing
+  phase: Develop
+  command: GENERATE_TESTS
+  params:
+    coverage_target: '0.85'
+  weight: 4
+  tags:
+  - tests
+  - fdmc:develop
+- slug: tests-verify
+  title: Run test suite with coverage
+  category: testing
+  phase: Test
+  command: RUN_TESTS
+  params:
+    with_coverage: 'true'
+  weight: 2
+  tags:
+  - tests
+  - fdmc:test
+- slug: lint
+  title: Fix lint and style issues
+  category: linting
+  phase: Develop
+  command: FIX_LINT
+  params: {}
+  weight: 1
+  tags:
+  - lint
+  - fdmc:develop
+- slug: type-hints
+  title: Audit type hints coverage
+  category: type-hints
+  phase: Develop
+  command: AUDIT_TYPE_HINTS
+  params: {}
+  weight: 2
+  tags:
+  - types
+  - fdmc:develop
+- slug: ci
+  title: Add CI workflows
+  category: ci-cd
+  phase: Harden
+  command: SETUP_CI
+  params: {}
+  weight: 2
+  tags:
+  - ci
+  - fdmc:harden
+- slug: community
+  title: Add community health files
+  category: community
+  phase: Document
+  command: WRITE_COMMUNITY_FILES
+  params: {}
+  weight: 2
+  tags:
+  - docs
+  - community
+  - fdmc:document
+- slug: pre-commit
+  title: Configure pre-commit hooks
+  category: pre-commit
+  phase: Harden
+  command: SETUP_PRECOMMIT
+  params: {}
+  weight: 1
+  tags:
+  - ci
+  - fdmc:harden
+- slug: release-notes
+  title: Generate release notes
+  category: release-notes
+  phase: Document
+  command: GENERATE_CHANGELOG
+  params: {}
+  weight: 1
+  tags:
+  - docs
+  - fdmc:document
+- slug: security
+  title: Run security scanning
+  category: security
+  phase: Harden
+  command: SECURITY_HARDEN
+  params:
+    tools: bandit,pip-audit
+  weight: 3
+  tags:
+  - security
+  - fdmc:harden
+- slug: dependencies
+  title: Update dependencies
+  category: dependencies
+  phase: Harden
+  command: UPDATE_DEPENDENCIES
+  params:
+    review: 'true'
+  weight: 2
+  tags:
+  - deps
+  - fdmc:harden
+metrics_baseline:
+  total_python_files: 1
+  functions_without_docstrings: 3
+  functions_without_type_hints: 3
+  modules_without_tests: 1
+  bare_except_blocks: 0
+  logging_statements: 0
+  todo_count: 0
+  workflows_present: false
+  pre_commit_present: false
+  contributing_present: false
+  license_present: false
+  code_of_conduct_present: false
+  issue_templates_present: false
+  pr_template_present: false
+  changelog_present: false
+  docs_dir_present: false
+  coverage_files: 0
+  requirements_files: 1
