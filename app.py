@@ -27,11 +27,7 @@ model = load_model(MODEL_PATH)
 def model_predict(img_path, model):
     
 """
-TODO: Document model_predict(img_path, model).
-Args:
-    ...
-Returns:
-    ...
+TODO: Document model_predict.
 """
     img = image.load_img(img_path, target_size=(224, 224))
     img = image.img_to_array(img)
@@ -46,11 +42,7 @@ Returns:
 def index():
     # Main page
 """
-TODO: Document index().
-Args:
-    ...
-Returns:
-    ...
+TODO: Document index.
 """
     return render_template('index.html')
 
@@ -58,11 +50,7 @@ Returns:
 @app.route('/predict', methods=['GET', 'POST'])
 def upload():
 """
-TODO: Document upload().
-Args:
-    ...
-Returns:
-    ...
+TODO: Document upload.
 """
     label = {'cardboard': 0, 
             'glass': 1, 
